@@ -10,7 +10,7 @@ title: The MARGIN Lab
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the MARGINLab.
-baseurl: "/marginlab-website-public"
+baseurl: "/marginlab"
 url: "https://marginlab.github.io"
 
 include:
