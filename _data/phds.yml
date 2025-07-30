@@ -1,0 +1,30 @@
+- name: Jiajun Cheng
+  photo: jiajun.png
+  info: School of Computing and Augmented Intelligence (SCAI)
+  email: ccheng58@asu.edu
+  number_educ: 2
+  education1: B.S. Computer Sciences, Arizona State University, USA
+  education2: B.S. Applied Mathematics, Arizona State University, USA
+  website: 
+  google_scholar:
+
+- name: Haokai Xu
+  photo: haokai.jpg
+  info: School of Electrical, Computer and Energy Engineering (ECEE)
+  email: 
+  number_educ: 3
+  education1: M.S. Electronic and Computer Engineering, Georgia Institution of Technology, USA
+  education2: M.S. Integrated Circuit Engineering, Tsinghua University, China
+  education3: B.S. Measurement and Control Technology and Instrument, Huazhong University of Science and Technology, China
+  website: 
+  google_scholar:
+
+- name: Hiu Ching (Athena) Cheung
+  photo: athena.png
+  info: Joining Spring 2026; School of Manufacturing Systems and Networks (MSN)
+  email: 
+  number_educ: 2
+  education1: M.S. Aeronautical and Aviation Engineering, Hong Kong Polytechnic University
+  education2: B.E. Mechanical Engineering, Hong Kong Polytechnic University
+  website: 
+  google_scholar:

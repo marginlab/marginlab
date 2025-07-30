@@ -1,0 +1,67 @@
+- title: "SurgXBench: Explainable Vision-Language Model Benchmark for Surgery"
+  image: causal.png
+  authors: Jiajun Cheng, Xianwu Zhao, Sainan Liu, Xiaofan Yu, Ravi Prakash, Patrick J. Codd, Jonathan Elliott Katz, Shan Lin
+  link:
+    url: https://arxiv.org/abs/2505.10764
+    display: arXiv preprint arXiv:2505.10764 (2025)
+  highlight: 1
+
+- title: "TwinTrack: Bridging Vision and Contact Physics for Real-Time Tracking of Unknown Dynamic Objects"
+  image: twin.png
+  authors: Wen Yang, Zhixian Xie, Xuechao Zhang, Heni Ben Amor, Shan Lin, Wanxin Jin
+  link:
+    url: https://arxiv.org/abs/2505.22882
+    display: arXiv preprint arXiv:2505.22882 (2025)
+  highlight: 1
+
+- title: "Efficient Data-Driven Joint-Level Calibration of Cable-Driven Surgical Robots"
+  image: 
+  authors: Haonan Peng, Andrew Lewis, Yun-Hsuan Su, Shan Lin, Dun-Tin Chiang, Wenfan Jiang, Helen Lai, Blake Hannaford 
+  link:
+    url: https://www.nature.com/articles/s44182-024-00016-x
+    display: npj Robotics (2024)
+  highlight: 0
+
+- title: "CtRNet-X: Camera-to-Robot Pose Estimation in Real-World Conditions Using a Single Camera"
+  image: 
+  authors: Jingpei Lu, Zekai Liang, Tristin Xie, Florian Ritcher, Shan Lin, Sainan Liu, Michael C. Yip
+  link:
+    url: https://arxiv.org/abs/2409.10441
+    display: IEEE International Conference on Robotics and Automation (ICRA 2025)
+  highlight: 0
+  news2: 
+
+- title: "HemoSet: The First Blood Segmentation Dataset for Automation of Hemostasis Management"
+  image: 
+  authors: Albert J. Miao, Shan Lin, Jingpei Lu, Florian Richter, Benjamin Ostrander, Emily K. Funk, Ryan K. Orosco, Michael C. Yip
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/10585699
+    display: International Symposium on Medical Robotics (ISMR 2024)
+  highlight: 0
+  news1: 
+
+
+- title: "Real-to-Sim Deformable Object Manipulation: Optimizing Physics Models with Residual Mappings for Robotic Surgery"
+  image: 
+  authors: Xiao Liang, Fei Liu, Yutong Zhang, Yuelei Li, Shan Lin, Michael Yip
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/10610263
+    display: IEEE International Conference on Robotics and Automation (ICRA 2024)
+  highlight: 0
+
+- title: "Semantic-SuPer: A Semantic-Aware Surgical Perception Framework for Endoscopic Tissue Identification, Reconstruction, and Tracking"
+  image: 
+  authors: Shan Lin, Albert J Miao, Jingpei Lu, Shunkai Yu, Zih-Yun Chiu, Florian Richter, Michael C Yip
+  link:
+    url: https://ieeexplore.ieee.org/document/10160746
+    display: IEEE International Conference on Robotics and Automation (ICRA 2023)
+  highlight: 0
+  news2:
+
+- title: "Multi-Frame Feature Aggregation for Real-Time Instrument Segmentation in Endoscopic Video"
+  image: 
+  authors: Shan Lin, Fangbo Qin, Haonan Peng, Randall A. Bly, Kris S. Moe, Blake Hannaford
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/9479703
+    display: IEEE Robotics and Automation Letters (2021)
+  highlight: 0
