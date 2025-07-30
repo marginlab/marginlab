@@ -12,7 +12,7 @@ permalink: /contact
 <p style="margin-top: 0; margin-bottom: 0px;">Goldwater Center, Room 328</p>
 <p style="margin-top: 0; margin-bottom: 0px;">Email: <a href="mailto:shan.lin.2@asu.edu">shan.lin.2@asu.edu</a></p>
 
-<p style="color: #AF674B;">If you’re a student or postdoc interested in joining our lab, feel free to email me with your **Self-introduction, CV, and Transcripts**.</p>
+<p style="color: #AF674B;">If you’re a student or postdoc interested in joining our lab, feel free to email me with your **Self-Introduction, CV, and Transcripts**.</p>
 
 <div class="map-container">
   <h3 style="background-color: #FFC72C; font-weight: bold; color: #000; display: inline-block; padding: 4px 8px;">

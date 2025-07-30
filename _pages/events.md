@@ -26,7 +26,7 @@ permalink: /events/
 </p>
 
 <div style="text-align: center; margin-top: 0;">
-  <img src="/images/elsr2025.jpg" alt="Workshop Figure" style="max-width: 80%; height: auto; margin-top: 0;">
+  <img src="{{ site.baseurl }}/images/elsr2025.jpg" alt="Workshop Figure" style="max-width: 80%; height: auto; margin-top: 0;">
 </div>
 
 ---
