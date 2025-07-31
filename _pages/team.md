@@ -104,12 +104,24 @@ permalink: /team/
     {% endif %}
     {% if member.email or member.website or member.google_scholar %}
       <p style="margin-top: 1rem; font-size: 0.95em; white-space: nowrap;">
-      {% assign link_parts = "" %}
-      {% if member.email %}{% assign link_parts = link_parts | append: '<a href="mailto:' | append: member.email | append: '">' | append: member.email | append: '</a>' %}{% endif %}
-      {% if member.website %}{% if link_parts != "" %}{% assign link_parts = link_parts | append: ' | ' %}{% endif %}{% assign link_parts = link_parts | append: '<a href="' | append: member.website | append: '" target="_blank">Personal Website</a>' %}{% endif %}
-      {% if member.google_scholar %}{% if link_parts != "" %}{% assign link_parts = link_parts | append: ' | ' %}{% endif %}{% assign link_parts = link_parts | append: '<a href="' | append: member.google_scholar | append: '" target="_blank">Google Scholar</a>' %}{% endif %}
-      {{ link_parts | raw }}
-    </p>
+        {% assign link_parts = "" %}
+        {% if member.email %}
+          {% assign link_parts = link_parts | append: '<a href="mailto:' | append: member.email | append: '">' | append: member.email | append: '</a>' %}
+        {% endif %}
+        {% if member.website %}
+          {% if link_parts != "" %}
+            {% assign link_parts = link_parts | append: ' | ' %}
+          {% endif %}
+          {% assign link_parts = link_parts | append: '<a href="' | append: member.website | append: '" target="_blank">Personal Website</a>' %}
+        {% endif %}
+        {% if member.google_scholar %}
+          {% if link_parts != "" %}
+            {% assign link_parts = link_parts | append: ' | ' %}
+          {% endif %}
+          {% assign link_parts = link_parts | append: '<a href="' | append: member.google_scholar | append: '" target="_blank">Google Scholar</a>' %}
+        {% endif %}
+        {{ link_parts | raw }}
+      </p>
     {% endif %}
   </div>
   <!-- </ul> -->
