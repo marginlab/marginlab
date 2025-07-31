@@ -101,18 +101,15 @@ permalink: /team/
 
   {% if member.email or member.website or member.google_scholar %}
   <p style="margin-top: 1rem; font-size: 0.95em; white-space: nowrap;">
-    {% assign link_shown = false %}
     {% if member.email %}
       <a href="mailto:{{ member.email }}">{{ member.email }}</a>
-      {% assign link_shown = true %}
     {% endif %}
     {% if member.website %}
-      {% if link_shown %} | {% endif %}
+      {% if member.email %} | {% endif %}
       <a href="{{ member.website }}" target="_blank">Personal Website</a>
-      {% assign link_shown = true %}
     {% endif %}
     {% if member.google_scholar %}
-      {% if link_shown %} | {% endif %}
+      {% if member.email or member.website %} | {% endif %}
       <a href="{{ member.google_scholar }}" target="_blank">Google Scholar</a>
     {% endif %}
   </p>
