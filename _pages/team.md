@@ -100,11 +100,21 @@ permalink: /team/
   {% endif %}
   
   {% if member.email or member.website or member.google_scholar %}
-    <p style="margin-top: 1rem; font-size: 0.95em; white-space: nowrap;">
-      {% assign link_parts = "" %}
-      {% if member.email %}{% assign link_parts = link_parts | append: '<a href="mailto:' | append: member.email | append: '">' | append: member.email | append: '</a>' %}{% endif %}
-      {% if member.website %}{% if link_parts != "" %}{% assign link_parts = link_parts | append: ' | ' %}{% endif %}{% assign link_parts = link_parts | append: '<a href="' | append: member.website | append: '" target="_blank">Personal Website</a>' %}{% endif %}
-      {% if member.google_scholar %}{% if link_parts != "" %}{% assign link_parts = link_parts | append: ' | ' %}{% endif %}{% assign link_parts = link_parts | append: '<a href="' | append: member.google_scholar | append: '" target="_blank">Google Scholar</a>' %}{% endif %}
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.95em; white-space: nowrap;">
+      {% assign shown = false %}
+      {% if member.email %}
+        <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+        {% assign shown = true %}
+      {% endif %}
+      {% if member.website %}
+        {% if shown %} | {% endif %}
+        <a href="{{ member.website }}" target="_blank">Personal Website</a>
+        {% assign shown = true %}
+      {% endif %}
+      {% if member.google_scholar %}
+        {% if shown %} | {% endif %}
+        <a href="{{ member.google_scholar }}" target="_blank">Google Scholar</a>
+      {% endif %}
     </p>
   {% endif %}
 
