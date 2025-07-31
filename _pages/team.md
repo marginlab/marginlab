@@ -84,20 +84,20 @@ permalink: /team/
   <!-- <ul style="overflow: hidden"> -->
 
   {% if member.number_educ >= 1 %}
-  <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education1 }}</p>
-{% endif %}
-{% if member.number_educ >= 2 %}
-  <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education2 }}</p>
-{% endif %}
-{% if member.number_educ >= 3 %}
-  <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education3 }}</p>
-{% endif %}
-{% if member.number_educ >= 4 %}
-  <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education4 }}</p>
-{% endif %}
-{% if member.number_educ == 5 %}
-  <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education5 }}</p>
-{% endif %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education1 }}</p>
+  {% endif %}
+  {% if member.number_educ >= 2 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education2 }}</p>
+  {% endif %}
+  {% if member.number_educ >= 3 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education3 }}</p>
+  {% endif %}
+  {% if member.number_educ >= 4 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education4 }}</p>
+  {% endif %}
+  {% if member.number_educ == 5 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education5 }}</p>
+  {% endif %}
   
   {% if member.email or member.website or member.google_scholar %}
     <p style="margin-top: 1rem; font-size: 0.95em; white-space: nowrap;">
@@ -105,7 +105,6 @@ permalink: /team/
       {% if member.email %}{% assign link_parts = link_parts | append: '<a href="mailto:' | append: member.email | append: '">' | append: member.email | append: '</a>' %}{% endif %}
       {% if member.website %}{% if link_parts != "" %}{% assign link_parts = link_parts | append: ' | ' %}{% endif %}{% assign link_parts = link_parts | append: '<a href="' | append: member.website | append: '" target="_blank">Personal Website</a>' %}{% endif %}
       {% if member.google_scholar %}{% if link_parts != "" %}{% assign link_parts = link_parts | append: ' | ' %}{% endif %}{% assign link_parts = link_parts | append: '<a href="' | append: member.google_scholar | append: '" target="_blank">Google Scholar</a>' %}{% endif %}
-      {{ link_parts | raw }}
     </p>
   {% endif %}
 
