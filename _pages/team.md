@@ -80,7 +80,7 @@ permalink: /team/
   <h4 style="font-size: 2.4rem; font-weight: 600; margin-top: 32px; margin-bottom: 0.25rem;">
     {{ member.name }}
   </h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }}</i> <!--<br>email: <{{ member.email }}></i> -->
   <!-- <ul style="overflow: hidden"> -->
 
   {% if member.number_educ >= 1 %}
