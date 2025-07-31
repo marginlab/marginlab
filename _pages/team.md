@@ -110,10 +110,8 @@ permalink: /team/
       {% if member.google_scholar %}{% if link_parts != "" %}{% assign link_parts = link_parts | append: ' | ' %}{% endif %}{% assign link_parts = link_parts | append: '<a href="' | append: member.google_scholar | append: '" target="_blank">Google Scholar</a>' %}{% endif %}
       {{ link_parts | raw }}
     </p>
+    {% endif %}
   </div>
-{% endif %}
-
-
   <!-- </ul> -->
 </div>
 
