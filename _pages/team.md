@@ -76,45 +76,50 @@ permalink: /team/
 {% endif %}
 
 <div class="col-sm-12 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="20%" style="float: left; margin-right: 20px; margin-bottom: 10px;" />
-
-  <div style="overflow: hidden;">
-    <h4 style="font-size: 2.4rem; font-weight: 600; margin-top: 0; margin-bottom: 0.25rem;">
-      {{ member.name }}
-    </h4>
-    <i>{{ member.info }}</i>
-
-    {% if member.number_educ >= 1 %}
-      <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education1 }}</p>
-    {% endif %}
-    {% if member.number_educ >= 2 %}
-      <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education2 }}</p>
-    {% endif %}
-    {% if member.number_educ >= 3 %}
-      <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education3 }}</p>
-    {% endif %}
-    {% if member.number_educ >= 4 %}
-      <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education4 }}</p>
-    {% endif %}
-    {% if member.number_educ == 5 %}
-      <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education5 }}</p>
-    {% endif %}
-
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="20%" style="float: left" />
+  <h4 style="font-size: 2.4rem; font-weight: 600; margin-top: 32px; margin-bottom: 0.25rem;">
+    {{ member.name }}
+  </h4>
+    <!--<i>{{ member.info }}-->
+  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
+  <!-- <ul style="overflow: hidden"> -->
+  {% if member.number_educ >= 1 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education1 }}</p>
+  {% endif %}
+  {% if member.number_educ >= 2 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education2 }}</p>
+  {% endif %}
+  {% if member.number_educ >= 3 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education3 }}</p>
+  {% endif %}
+  {% if member.number_educ >= 4 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education4 }}</p>
+  {% endif %}
+  {% if member.number_educ == 5 %}
+    <p style="margin: 0 0 2px 0; line-height: 1.2; color: #444;">{{ member.education5 }}</p>
+  {% endif %}
+  {% if member.email or member.website or member.google_scholar %}
     <p style="margin-top: 1rem; font-size: 0.95em; white-space: nowrap;">
-      {% assign links = "" %}
+      {% assign link_parts = "" %}
       {% if member.email %}
-        <a href="mailto:{{ member.email }}">{{ member.email }}</a>{% assign links = "shown" %}
+        {% assign link_parts = link_parts | append: '<a href="mailto:' | append: member.email | append: '">' | append: member.email | append: '</a>' %}
       {% endif %}
       {% if member.website %}
-        {% if links == "shown" %} | {% endif %}
-        <a href="{{ member.website }}" target="_blank">Personal Website</a>{% assign links = "shown" %}
+        {% if link_parts != "" %}
+          {% assign link_parts = link_parts | append: ' | ' %}
+        {% endif %}
+        {% assign link_parts = link_parts | append: '<a href="' | append: member.website | append: '" target="_blank">Personal Website</a>' %}
       {% endif %}
       {% if member.google_scholar %}
-        {% if links == "shown" %} | {% endif %}
-        <a href="{{ member.google_scholar }}" target="_blank">Google Scholar</a>
+        {% if link_parts != "" %}
+          {% assign link_parts = link_parts | append: ' | ' %}
+        {% endif %}
+        {% assign link_parts = link_parts | append: '<a href="' | append: member.google_scholar | append: '" target="_blank">Google Scholar</a>' %}
       {% endif %}
+      {{ link_parts | raw }}
     </p>
-  </div>
+  {% endif %}
+  <!-- </ul> -->
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
